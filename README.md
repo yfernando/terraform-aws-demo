@@ -59,6 +59,9 @@ This could be the offending line.
 ```
     subnets = [aws_subnet.CM_subnet_private[count.index].id]
 ```
+
+Running ecs service with the desired count of tasks.
+
 ![Running ecs service](./image/running_ecs_service.jpeg)
 
 ## Some links to resources that helped me to do this demo. Thanks! 
