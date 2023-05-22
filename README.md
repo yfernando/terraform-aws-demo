@@ -11,7 +11,7 @@ This is a demo to create a simple infrastructure to deploy a basic HTTP web serv
 
 ## Pre-requisites 
 1. This demo implies that you already have an AWS account and Terraform CLI installed.
-2. Set corresponding IAM credentials set in `~/.aws/credentials` and have permission to create and delete for all AWS resources.
+2. Corresponding IAM credentials set in `~/.aws/credentials` and have permission to create and delete for all AWS resources.
 3. S3 bucket pre-created to store remote state. See `main.tf` for bucket details.
 
 ## How to create the infrastructure?
