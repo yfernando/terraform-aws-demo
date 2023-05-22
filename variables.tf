@@ -21,6 +21,10 @@ variable "azs" {
     default = ["eu-west-1a","eu-west-1b","eu-west-1c"]
 }
 
+variable "image_url" {
+    default = "252393451956.dkr.ecr.region.amazonaws.com/nginx:latest"
+}
+
 #variable "workspace_iam_roles" {
 #  default = {
 #    cm-admin    = "arn:aws:iam::ACCOUNT-ID:role/Terraform"
