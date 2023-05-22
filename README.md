@@ -28,7 +28,7 @@ This is a demo to create a simple infrastructure to deploy a basic HTTP web serv
 ## Brief Overview
 Following sketch is the target setup I was aiming for. 
 
-![Target setup](./images/sketch.jpeg)
+![Target setup](./image/sketch.jpeg)
 
 ECS cluster is created using Fargate as the launch type. This means the Docker container (`nginx`) would run in a Fargate task as I didn’t want to manage the EC2 instances and corresponding amis. Fargate is a serverless service to deploy ECS clusters generally used for transient workloads. Fargate provides native integration with VPC, IAM and provides an ENI for the tasks to communicate securely with other services.
 
@@ -59,7 +59,7 @@ This could be the offending line.
 ```
     subnets = [aws_subnet.CM_subnet_private[count.index].id]
 ```
-![Target setup](./images/running_ecs_service.jpeg)
+![Running ecs service](./image/running_ecs_service.jpeg)
 
 ## Some links to resources that helped me to do this demo. Thanks! 
 
@@ -72,4 +72,8 @@ https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateway-scenarios.html#publ
 3. Deploying an AWS ECS Cluster of EC2 Instances With Terraform
 https://medium.com/swlh/creating-an-aws-ecs-cluster-of-ec2-instances-with-terraform-85a10b5cfbe3
 
+4. Provisioning VPC, ECS and ALB using Terraform
+https://github.com/mashun4ek/ecs_terraform_workshop/tree/master
 
+5. The official Terraform documentation for AWS
+https://www.terraform.io/docs/providers/aws/
