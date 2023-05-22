@@ -20,3 +20,9 @@ variable "azs" {
     type = list
     default = ["eu-west-1a","eu-west-1b","eu-west-1c"]
 }
+
+#variable "workspace_iam_roles" {
+#  default = {
+#    cm-admin    = "arn:aws:iam::ACCOUNT-ID:role/Terraform"
+#  }
+#}
