@@ -13,3 +13,6 @@
 
 # Sensitive data
 *.tfvars
+
+# mac folders
+**/.DS_Store/*
