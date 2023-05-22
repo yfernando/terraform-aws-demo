@@ -30,7 +30,7 @@ resource "aws_ecs_service" "CM_ecs_service" {
   count = length(var.private_subnets)
   network_configuration {
     security_groups   = [aws_security_group.CM_ecs_sg.id]
-    subnets           = [aws_subnet.CM_subnet_private[count.index].id]
+    subnets           = [aws_subnet.CM_subnet_private[count.index].id] # needs fixing as only takes the first subnet
     assign_public_ip  = false
   }
 }
